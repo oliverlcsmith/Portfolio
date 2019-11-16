@@ -75,10 +75,16 @@
       <div class="title">
         <h1>Hello, I'm <span class="name">Oliver Smith</span>.</h1>
         <h1>I'm a front-end web developer.</h1>
-        <a class="title-btn-link" href="#services"
-          ><button class="title-btn" type="button">
-            My Work<span><i class="fas fa-angle-down"></i></span></button
-        ></a>
+        <div class="title-btn-container">
+          <a class="title-btn-link" href="#services"
+            ><button class="title-btn" type="button">
+              My Work<i class="fas fa-angle-down"></i></button
+          ></a>
+        </div>
+        <!-- Up button in bottom right corner -->
+        <a href="#home" class="up-btn up-btn-link">
+          <i class="fas fa-arrow-circle-up"></i>
+        </a>
       </div>
     </section>
 
@@ -87,7 +93,6 @@
     <section class="services-area" id="services">
       <div class="text-part">
         <h1 class="main-header">Services</h1>
-        
       </div>
     </section>
 
@@ -97,16 +102,21 @@
       <div class="text-part">
         <h1 class="main-header">Portfolio</h1>
         <div class="portfolio-container">
-          <div class="portfolio-item">
-            <i class="fas fa-search-plus fa-3x"></i>
+          <div class="port-item-container">
+            <div class="portfolio-item">
+              <i class="fas fa-search-plus fa-3x"></i>
+            </div>
           </div>
-          <!-- Add FA plus symbol to middle of portfolio item, when hover this will display and link to external site -->
-          <!-- use opacity 0 and 1 to make it disapear and appear on hover -->
-          <div class="portfolio-item">
-            <i class="fas fa-search-plus fa-3x"></i>
+          <!--  -->
+          <div class="port-item-container">
+            <div class="portfolio-item">
+              <i class="fas fa-search-plus fa-3x"></i>
+            </div>
           </div>
-          <div class="portfolio-item">
-            <i class="fas fa-search-plus fa-3x"></i>
+          <div class="port-item-container">
+            <div class="portfolio-item">
+              <i class="fas fa-search-plus fa-3x"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -124,14 +134,12 @@
 
     <section class="contact-area" id="contact">
       <div class="text-part">
-        <h1 class="main-header">Contact</h1>
-        <p>Want to work together? Contact me below!</p>
-        <!-- Add contact details not contact form -->
+        <p class="contact-text">Want to work together? Contact me below!</p>
         <div class="contact-social">
-          <i class="fab fa-facebook-f fa-3x"></i>
-          <i class="fab fa-instagram fa-3x"></i>
-          <i class="fab fa-linkedin-in fa-3x"></i>
-          <i class="far fa-envelope fa-3x"></i>
+          <a href=""><i class="fab fa-facebook-f fa-3x"></i></a>
+          <a href=""><i class="fab fa-instagram fa-3x"></i></a>
+          <a href=""><i class="fab fa-linkedin-in fa-3x"></i></a>
+          <a href=""><i class="far fa-envelope fa-3x"></i></a>
         </div>
       </div>
     </section>
