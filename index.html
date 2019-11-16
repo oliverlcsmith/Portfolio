@@ -128,16 +128,43 @@
     <section class="contact-area" id="contact">
       <div class="text-part">
         <h1 class="main-header">Contact</h1>
-        <p class="main-text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
-          delectus et mollitia doloremque eius, laudantium iusto! Cum deleniti
-          modi magni?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Mollitia nam impedit explicabo dolore! Dolorum maxime adipisci tenetur
-          sit non sint cupiditate, eum saepe asperiores? Error placeat, magni
-          debitis incidunt cum obcaecati eius expedita cupiditate, temporibus
-          quam exercitationem velit sunt commodi libero voluptas accusantium
-          voluptates iste suscipit reiciendis ab aliquid impedit.
-        </p>
+        <div class="contact-container">
+          <form action="">
+            <label class="form-label" for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your First Name"
+            />
+
+            <label class="form-label" for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your Last Name"
+            />
+
+            <label class="form-label" for="email">E-Mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your E-Mail"
+            />
+
+            <label class="form-label" for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Your Message"
+              style="height:200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </div>
     </section>
   </body>
