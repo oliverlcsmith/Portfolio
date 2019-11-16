@@ -189,46 +189,6 @@ html {
 
 /* Contact Form */
 
-/* Style inputs with type="text", select elements and textareas */
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid var(--mainColor);
-  border-radius: 4px; /* Rounded borders */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type="submit"] {
-  background-color: var(--mainColor);
-  color: var(--primaryColor);
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: var(--otherColor);
-}
-
-/* Add a background color and some padding around the form */
-.contact-container {
-  border-radius: 5px;
-  background-color: var(--primaryColor);
-  padding: 20px;
-  margin-top: 2vw;
-}
-
-.form-label {
-  color: var(--mainColor);
-}
-
 /* Footer */
 footer {
   height: 7vh;
