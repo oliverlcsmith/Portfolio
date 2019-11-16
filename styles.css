@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap");
+
+:root {
+  /* Colors */
+  --primaryColor: #d8d8cf;
+  --titleColor: #ffff;
+  --navbarbgColor: #172447de;
+  --mainColor: #172447;
+  --otherColor: #31588d;
+  --brightColor: #ff0080;
+  /* Fonts */
+  --primaryFont: "Montserrat", sans-serif;
+}
+
+/* General CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primaryFont);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main Page */
+
+.title {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--titleColor);
+  font-size: 2em;
+}
+
+.name {
+  color: var(--brightColor);
+}
+
+.title-btn {
+  width: 15vw;
+  height: 5vh;
+  margin: 2em;
+  background: none;
+  color: #fefefe;
+  font-size: 0.5em;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-btn:hover {
+  background: var(--otherColor);
+  border: var(--otherColor);
+}
+
+.title-btn-link {
+  text-decoration: none;
+}
+
+.fa-angle-down {
+  margin: 5px;
+  transform: rotate(270deg);
+}
+
+.fa-angle-down:hover {
+  transform: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-right: 15%;
+}
+.logo {
+  flex: 1 1 auto;
+  margin-left: 10%;
+}
+
+.banner-area {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.3)),
+    url(./gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg)
+      center/cover no-repeat fixed;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Rest of Pages */
+
+.services-area,
+.portfolio-area {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-load-link {
+  text-decoration: none;
+  color: var(--navbarbgColor);
+}
+
+.contact-area {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 95vh;
+}
+footer {
+  height: 5vh;
+}
+.text-part {
+  width: 80%;
+  height: 80%;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 50px;
+}
+.services-area,
+.contact-area,
+.footer-area {
+  background: #262626;
+  color: whitesmoke;
+}
+.portfolio-area {
+  background: #fefefe;
+}
