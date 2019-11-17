@@ -206,6 +206,10 @@ html {
   justify-content: center;
 }
 
+.contact-social a {
+  margin: 1em;
+}
+
 .contact-text {
   height: 50%;
   display: flex;
