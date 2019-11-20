@@ -170,21 +170,31 @@ html {
 
 .portfolio-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
 }
 
-.portfolio-item {
-  width: 300px;
-  height: 300px;
-  align-self: center;
-  border: 1px solid black;
-  margin: 1vw;
+.port-item-container {
   text-align: center;
+}
+
+.portfolio-item {
+  width: auto;
+  height: auto;
+  align-self: center;
+  border: 10px solid black;
+  margin: 1vw;
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+.portfolio-img {
+  width: 500px;
+  height: auto;
+  position: relative;
 }
 
 /* Portfolio plus sign on portfolio item */
@@ -194,8 +204,8 @@ html {
 }
 
 .fa-search-plus {
+  position: absolute;
   color: var(--brightColor);
-  margin: auto;
   opacity: 0;
 }
 
