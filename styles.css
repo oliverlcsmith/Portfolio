@@ -139,8 +139,14 @@ html {
 }
 
 .skill-icon {
-  color: var(--primaryColor);
+  color: var(--otherColor);
   margin-right: 1em;
+}
+
+.about-me {
+  margin: 1em;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 .services-area,
@@ -196,8 +202,7 @@ html {
 .services-area,
 .contact-area,
 .footer-area {
-  background: #262626;
-  color: whitesmoke;
+  color: var(--mainColor);
 }
 .portfolio-area {
   background: #fefefe;

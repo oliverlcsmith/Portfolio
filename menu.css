@@ -162,7 +162,7 @@ body {
   color: var(--brightColor);
 }
 .social-icons:hover {
-  color: var(--menutextColor);
+  color: var(--otherColor);
 }
 
 .menu-social {
