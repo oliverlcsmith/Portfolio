@@ -108,6 +108,40 @@ html {
 }
 
 /* Rest of Pages */
+.loading-bar {
+  width: 70vw;
+  height: 20px;
+  background: var(--primaryColor);
+}
+
+.progress-bar-html {
+  width: 90%;
+  height: 20px;
+  background: var(--brightColor);
+}
+.progress-bar-css {
+  width: 85%;
+  height: 20px;
+  background: var(--brightColor);
+}
+.progress-bar-js {
+  width: 20%;
+  height: 20px;
+  background: var(--brightColor);
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  height: 5vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-icon {
+  color: var(--primaryColor);
+  margin-right: 1em;
+}
 
 .services-area,
 .portfolio-area {
@@ -150,6 +184,7 @@ html {
 .main-header {
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
 }
 
 .main-text {

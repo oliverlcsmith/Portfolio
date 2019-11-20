@@ -158,13 +158,10 @@ body {
   text-decoration: none;
   transition: color 0.4s ease;
 }
-.fab,
-.far {
+.social-icons {
   color: var(--brightColor);
-  /* margin: 1em; */
 }
-.fab:hover,
-.far:hover {
+.social-icons:hover {
   color: var(--menutextColor);
 }
 
