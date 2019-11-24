@@ -5,7 +5,6 @@
   --primaryColor: #d8d8cf;
   --titleColor: #ffff;
   --navbarbgColor: #172447de;
-  --mainColor: #172447;
   --otherColor: #31588d;
   --brightColor: #ff0080;
   /* Fonts */
@@ -22,6 +21,9 @@
 }
 html {
   scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bg-color);
 }
 
 /* Main Page */
@@ -139,7 +141,7 @@ html {
 }
 
 .skill-icon {
-  color: var(--mainColor);
+  color: var(--font-color);
   margin-right: 1em;
 }
 
@@ -158,8 +160,7 @@ html {
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
-  background: whitesmoke;
+  height: auto;
 }
 .load-more {
   display: flex;
@@ -180,8 +181,7 @@ html {
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  height: 95vh;
-  background: whitesmoke;
+  height: 50vh;
 }
 
 .text-part {
@@ -193,6 +193,7 @@ html {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  margin: 1em;
 }
 
 .main-text {
@@ -204,21 +205,23 @@ html {
 .services-area,
 .contact-area,
 .footer-area {
-  color: var(--mainColor);
+  color: var(--font-color);
 }
 .portfolio-area {
-  background: var(--primaryColor);
+  height: auto;
+  color: var(--font-color);
 }
 
 .portfolio-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
-.port-item-container {
+.port-image-container {
   text-align: center;
 }
 
@@ -226,11 +229,11 @@ html {
   width: auto;
   height: auto;
   align-self: center;
-  border: 10px solid black;
+  /* border: 10px solid black; */
   margin: 1vw;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .portfolio-img {
@@ -239,8 +242,13 @@ html {
   position: relative;
 }
 
-/* Portfolio plus sign on portfolio item */
+.portfolio-item-container {
+  display: flex;
+  flex-direction: row;
+}
 
+/* Portfolio plus sign on portfolio item */
+/* 
 .port-item-container:hover .fa-search-plus {
   opacity: 1;
 }
@@ -249,7 +257,7 @@ html {
   position: absolute;
   color: var(--brightColor);
   opacity: 0;
-}
+} */
 
 /* Contact Page */
 
@@ -268,15 +276,16 @@ html {
   justify-content: center;
   align-items: center;
   font-size: 2em;
+  margin: 1em;
 }
 
 /* Footer */
 footer {
-  height: 7vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: whitesmoke;
+  height: 5vh;
 }
 
 .footer-text {

@@ -7,6 +7,7 @@
     <title>Oliver Smith | Web Developer</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="dark-mode.css">
     <link
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
@@ -19,11 +20,22 @@
       src="https://kit.fontawesome.com/667944e9cd.js"
       crossorigin="anonymous"
     ></script>
+    <script src="dark-mode.js" defer></script>
   </head>
 
   <!-- Header & Navbar -->
 
   <header class="header">
+    <!-- Dark Mode Toggle HTML-->
+    <div class="theme-switch-wrapper">
+  <label class="theme-switch" for="checkbox">
+    <input type="checkbox" id="checkbox" />
+    <div class="slider round"></div>
+  </label>
+</div>
+
+<!-- Menu HTML -->
+
     <div class="menu-wrap">
       <input type="checkbox" class="toggler" />
       <div class="hamburger"><div></div></div>
@@ -83,7 +95,7 @@
         <div class="title-btn-container">
           <a class="title-btn-link" href="#about"
             ><button class="title-btn" type="button">
-              My Work<i class="fas fa-angle-down"></i></button
+              About Me<i class="fas fa-angle-down"></i></button
           ></a>
         </div>
         <!-- Up button in bottom right corner -->
@@ -128,34 +140,37 @@
     </section>
 
     <!-- Portfolio -->
+    <!-- Change this section to include a breif desvription of the webpage next to the portfolio image -->
+    <!-- Have a button to view website (get rid of mag glass) and a button to view the source at Github -->
 
     <section class="portfolio-area" id="portfolio">
       <div class="text-part">
         <h1 class="main-header">Portfolio</h1>
         <div class="portfolio-container">
           <!--  -->
-          <div class="port-item-container">
+          <div class="port-image-container">
             <div class="portfolio-item">
               <img
                 class="portfolio-img"
                 src="./images/Screenshot 2019-11-17 at 07.06.56.png"
                 alt=""
               />
-              <i class="fas fa-search-plus fa-3x"></i>
             </div>
           </div>
           <!--  -->
           <!--  -->
-          <div class="port-item-container">
-            <div class="portfolio-item">
-              <img
+          <div class="porftfolio-item-container">
+           <div class="port-image-container">
+              <div class="portfolio-item">
+                <img
                 class="portfolio-img"
                 src="./images/Screenshot 2019-11-20 at 02.08.10.png"
                 alt=""
-              />
-              <i class="fas fa-search-plus fa-3x"></i>
-            </div>
+                />
+              </div>
+          
           </div>
+            </div>
           <!--  -->
           <!-- <div class="port-item-container">
             <div class="portfolio-item">
