@@ -7,7 +7,7 @@
     <title>Oliver Smith | Web Developer</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="menu.css" />
-    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="dark-mode.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
@@ -28,13 +28,13 @@
   <header class="header">
     <!-- Dark Mode Toggle HTML-->
     <div class="theme-switch-wrapper">
-  <label class="theme-switch" for="checkbox">
-    <input type="checkbox" id="checkbox" />
-    <div class="slider round"></div>
-  </label>
-</div>
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
 
-<!-- Menu HTML -->
+    <!-- Menu HTML -->
 
     <div class="menu-wrap">
       <input type="checkbox" class="toggler" />
@@ -133,8 +133,15 @@
             </div>
           </div>
           <h2 class="main-header">A little about me</h2>
-          <p class="about-me">ABOUT ME TEXT!</p>
-          <p class="about-me">My name is Oliver Smith, I'm a self-taught frontend developer.</p>
+          <p class="about-me">
+            My name is Oliver Smith, I'm a self-taught frontend developer.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis similique exercitationem voluptates suscipit libero
+            modi, laborum vitae a beatae natus ex quasi nulla corrupti unde
+            ipsam? Fugiat blanditiis quidem dolore, cumque fugit quam? Rem nisi
+            quidem tempore odio deserunt ullam odit cupiditate. Velit
+            exercitationem minus a vitae neque nemo quasi!
+          </p>
         </div>
       </div>
     </section>
@@ -144,44 +151,93 @@
     <!-- Have a button to view website (get rid of mag glass) and a button to view the source at Github -->
 
     <section class="portfolio-area" id="portfolio">
-      <div class="text-part">
+      <div>
         <h1 class="main-header">Portfolio</h1>
         <div class="portfolio-container">
+          <!--  -->
+          <!-- Coffee Junkie -->
           <!--  -->
           <div class="port-image-container">
             <div class="portfolio-item">
               <img
                 class="portfolio-img"
-                src="./images/Screenshot 2019-11-17 at 07.06.56.png"
+                src="../images/Screenshot 2019-11-17 at 07.06.56.png"
                 alt=""
               />
             </div>
+            <div>
+              <h3 class="port-item-title">Coffee Junkie</h3>
+              <p class="port-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                modi corporis ipsam reprehenderit officiis deserunt laudantium
+                debitis tempore. Dignissimos, odio.
+              </p>
+              <p>HTML | CSS</p>
+              <button class="port-button" type="button">
+                <i class="fas fa-link"></i> View
+              </button>
+              <button class="port-button" type="button">
+                <i class="fab fa-github"></i> Source
+              </button>
+            </div>
           </div>
+
           <!--  -->
+          <!-- Product Landing Page -->
           <!--  -->
-          <div class="porftfolio-item-container">
-           <div class="port-image-container">
-              <div class="portfolio-item">
-                <img
+          <div class="port-image-container">
+            <div class="portfolio-item">
+              <img
                 class="portfolio-img"
-                src="./images/Screenshot 2019-11-20 at 02.08.10.png"
+                src="../images/Screenshot 2019-11-20 at 02.08.10.png"
                 alt=""
-                />
-              </div>
-          
+              />
+            </div>
+            <div>
+              <h3 class="port-item-title">Product Landing Page</h3>
+              <p class="port-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                modi corporis ipsam reprehenderit officiis deserunt laudantium
+                debitis tempore. Dignissimos, odio.
+              </p>
+              <p>HTML | CSS</p>
+              <button class="port-button" type="button">
+                <i class="fas fa-link"></i> View
+              </button>
+              <button class="port-button" type="button">
+                <i class="fab fa-github"></i> Source
+              </button>
+            </div>
           </div>
-            </div>
           <!--  -->
-          <!-- <div class="port-item-container">
+          <!-- JillyBeans -->
+          <!--  -->
+          <div class="port-image-container">
             <div class="portfolio-item">
-              <i class="fas fa-search-plus fa-3x"></i>
+              <img
+                class="portfolio-img"
+                src="../images/Screenshot 2019-12-02 at 14.50.37.png"
+                alt="Image of JillyBeans Website"
+              />
             </div>
-          </div> -->
-          <!-- <div class="port-item-container">
-            <div class="portfolio-item">
-              <i class="fas fa-search-plus fa-3x"></i>
+            <div>
+              <h3 class="port-item-title">JillyBeans</h3>
+              <p class="port-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                modi corporis ipsam reprehenderit officiis deserunt laudantium
+                debitis tempore. Dignissimos, odio.
+              </p>
+              <p>HTML | CSS</p>
+              <button class="port-button" type="button">
+                <i class="fas fa-link"></i> View
+              </button>
+              <button class="port-button" type="button">
+                <i class="fab fa-github"></i> Source
+              </button>
             </div>
-          </div> -->
+          </div>
+
+          <!--  -->
         </div>
       </div>
       <!-- Load more symbol will load a hidden second portfolio page with more content on -->
@@ -214,7 +270,7 @@
             ><i class="far fa-envelope fa-3x social-icons"></i
           ></a>
           <a href="https://github.com/oliverlcsmith" target="_blank"
-            ><i class="fab fa-github fa-3x social-icons"></i></i
+            ><i class="fab fa-github fa-3x social-icons"></i
           ></a>
         </div>
       </div>
