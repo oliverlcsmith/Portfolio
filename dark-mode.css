@@ -4,6 +4,7 @@
   --font-color: #172447;
   --bg-color: #fff;
   --heading-color: #292922;
+  --name-color: #dddddd;
 }
 
 [data-theme="dark"] {
@@ -12,6 +13,7 @@
   --font-color: #dddddd;
   --bg-color: #242424;
   --heading-color: #818cab;
+  --name-color: #172447;
 }
 
 /* CSS to make it look like a toggle */
