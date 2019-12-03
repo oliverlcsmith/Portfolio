@@ -19,6 +19,7 @@
   box-sizing: border-box;
   font-family: var(--primaryFont);
 }
+
 html {
   scroll-behavior: smooth;
   width: auto;
@@ -37,7 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--font-color);
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .up-btn {
@@ -57,8 +58,8 @@ body {
 }
 
 .title-btn {
-  width: 15vw;
-  height: 5vh;
+  width: 100px;
+  height: 30px;
   background: none;
   color: var(--font-color);
   font-size: 0.5em;
@@ -67,6 +68,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2em;
 }
 
 .title-btn-container:hover .title-btn {
@@ -87,23 +89,13 @@ body {
   transform: rotate(270deg);
 }
 
-.nav {
-  display: flex;
-  justify-content: right;
-  list-style: none;
-  margin-right: 15%;
-}
-.logo {
-  flex: 1 1 auto;
-  margin-left: 10%;
-}
-
 .banner-area {
   position: relative;
-  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: circle(30%);
   background-color: var(--brightColor);
   width: 100vw;
   height: 100vh;
+  z-index: 0;
 }
 
 /* Rest of Pages */
@@ -238,15 +230,15 @@ body {
   margin: 1em;
 }
 
-.port-image-container:nth-child(odd) {
+/* .port-image-container:nth-child(odd) {
   flex-direction: row-reverse;
-}
+} */
+/* Doesn't work with media queries, makes the layout funny - try and fix! */
 
 .portfolio-item {
   width: auto;
   height: auto;
   align-self: center;
-  /* border: 10px solid black; */
   margin: 1vw;
   display: flex;
   align-items: center;
@@ -259,16 +251,10 @@ body {
   position: relative;
 }
 
-/* ? Do I need this */
-/* .portfolio-item-container {
-  display: flex;
-  flex-direction: row;
-  height: auto;
-} */
-
 .port-item-title {
   font-weight: bolder;
   color: var(--brightColor);
+  margin-top: 1em;
 }
 
 .port-description {
@@ -292,7 +278,7 @@ body {
   color: #fff;
 }
 
-/* Portfolio plus sign on portfolio item */
+/* Portfolio search sign on portfolio item */
 /* 
 .port-item-container:hover .fa-search-plus {
   opacity: 1;
@@ -340,16 +326,56 @@ footer {
 /*  */
 /* Media Queries */
 /* When the screen in smaller than 800px */
-/* @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
+  /* Home Page */
   .title,
   .title-btn {
     font-size: 0.8em;
   }
 
   .banner-area {
-    clip-path: circle(33%);
+    clip-path: circle(28%);
+  }
+
+  /* Headers */
+
+  .main-header {
+    font-size: 1.3em;
+  }
+
+  /* About Section */
+  .skill {
+    flex-direction: column;
+    margin: 2.5em;
+    margin-right: 0;
+  }
+
+  .about-me {
+    font-size: 0.8em;
+    line-height: 25px;
+  }
+
+  /* Portfolio Section */
+
+  .portfolio-container {
+    width: 100vw;
   }
   .port-image-container {
     flex-direction: column;
+    width: 100%;
   }
-} */
+
+  .portfolio-img {
+    width: 350px;
+  }
+  .port-button {
+    width: 5em;
+    height: 1.5em;
+  }
+
+  /* Contact Section */
+  .contact-text {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
