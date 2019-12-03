@@ -58,11 +58,11 @@ body {
 }
 
 .title-btn {
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   background: none;
   color: var(--font-color);
-  font-size: 0.5em;
+  font-size: 0.7em;
   cursor: pointer;
   transition: all 0.3s ease-in;
   display: flex;
@@ -230,10 +230,9 @@ body {
   margin: 1em;
 }
 
-/* .port-image-container:nth-child(odd) {
+.port-image-container:nth-child(odd) {
   flex-direction: row-reverse;
-} */
-/* Doesn't work with media queries, makes the layout funny - try and fix! */
+}
 
 .portfolio-item {
   width: auto;
@@ -351,7 +350,7 @@ footer {
   }
 
   .about-me {
-    font-size: 0.8em;
+    font-size: 0.9em;
     line-height: 25px;
   }
 
@@ -364,7 +363,9 @@ footer {
     flex-direction: column;
     width: 100%;
   }
-
+  .port-image-container:nth-child(odd) {
+    flex-direction: column;
+  }
   .portfolio-img {
     width: 350px;
   }
