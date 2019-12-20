@@ -6,7 +6,8 @@
   --titleColor: #ffff;
   --navbarbgColor: #172447de;
   --otherColor: #31588d;
-  --brightColor: #ff0080;
+  /* --brightColor: #ff0080; */
+  --brightColor: #75ff33;
   /* Fonts */
   --primaryFont: "Montserrat", sans-serif;
 }
